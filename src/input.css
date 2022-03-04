@@ -3,3 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+   .container {
+      @apply px-5;
+   }
+
+   .header {
+      @apply h-20 bg-white border-b border-gray-200;
+   }
+
+   .header-logo {
+      @apply text-xl font-medium text-indigo-300;
+   }
+
+   .header-menu {
+      @apply flex;
+   }
+
+   .header-menu-item {
+      @apply block py-3 ml-6 text-sm text-slate-500 hover:text-slate-900 transition-all;
+   }
+}
