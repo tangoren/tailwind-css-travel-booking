@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer components {
+   body {
+      @apply bg-gray-50;
+   }
+
    .container {
       @apply px-5;
    }
@@ -13,15 +17,35 @@
       @apply h-20 bg-white border-b border-gray-200;
    }
 
+   .header .container {
+      @apply relative flex justify-between items-center h-full;
+   }
+
    .header-logo {
-      @apply text-xl font-medium text-indigo-300;
+      @apply flex items-center text-xl font-semibold text-slate-600;
+   }
+
+   .header-logo-icon {
+      @apply mr-2 text-sky-500 text-4xl;
+   }
+
+   .menu-toggle {
+      @apply lg:hidden text-slate-600 w-10 h-10 flex justify-center items-center cursor-pointer;
    }
 
    .header-menu {
-      @apply flex;
+      @apply lg:py-0 py-8 flex flex-col lg:flex-row lg:items-center lg:relative fixed top-0 left-0 lg:bg-transparent bg-white lg:drop-shadow-none drop-shadow-xl h-full transition-all lg:translate-x-0 -translate-x-full;
+   }
+
+   .menu-open .header-menu {
+      @apply translate-x-0;
    }
 
    .header-menu-item {
-      @apply block py-3 ml-6 text-sm text-slate-500 hover:text-slate-900 transition-all;
+      @apply block py-3 lg:px-0 px-24 ml-0 lg:ml-6 text-sm text-center text-slate-500 hover:text-slate-900 transition-all;
+   }
+
+   .header-menu-copyright {
+      @apply mt-auto text-center text-xs lg:hidden block text-slate-400;
    }
 }
