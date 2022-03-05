@@ -136,22 +136,45 @@
       @apply after:content-['prev'];
    }
 
+   .tour-itinerary .accordion-panel {
+      @apply relative pl-12 before:content-['\f1e3'] first:before:content-['\e55f'] last:before:content-['\e153'] before:font-material before:absolute before:z-10 before:-top-[2px] before:left-0 before:w-8 before:h-8 before:leading-[2rem] before:bg-slate-200 before:rounded-full before:text-lg before:text-gray-400 first:before:bg-green-500 first:before:text-white last:before:bg-red-500 last:before:text-white before:text-center after:bg-gray-200 after:w-px after:h-full after:absolute after:top-0 after:left-[16px] last:after:hidden;
+   }
+
+   .tour-itinerary .accordion-panel.active {
+      @apply after:h-[calc(100%+2.5rem)];
+   }
+
+   .tour-itinerary .accordion-trigger {
+      @apply cursor-pointer pb-8 text-lg font-semibold text-slate-600;
+   }
+
+   .tour-itinerary .accordion-panel.active .accordion-trigger {
+      @apply p-0;
+   }
+
+   .tour-itinerary .accordion-trigger span {
+      @apply text-slate-400 font-medium;
+   }
+
+   .tour-itinerary .accordion-panel:last-child .accordion-trigger {
+      @apply pb-0;
+   }
+
+   .tour-itinerary .accordion-panel .accordion-content {
+      @apply hidden p-5 mt-8 mb-10 bg-white border border-solid border-gray-200 rounded-lg text-sm text-slate-500;
+   }
+
+   .tour-itinerary .accordion-panel.active .accordion-content {
+      @apply block;
+   }
+
+   .tour-itinerary .accordion-panel .accordion-content p {
+      @apply leading-6 mb-5 last:mb-0;
+   }
+
    .tour-sidebar {
-      @apply w-1/3 lg:ml-8 bg-white border border-solid border-gray-200 rounded-lg p-10;
+      @apply w-1/3 lg:ml-8 bg-white border border-solid border-gray-200 rounded-lg p-10 sticky top-8;
    }
 
    /* tour */
-}
-
-.accordion .accordion-panel .accordion-content {
-   opacity: 0;
-   height: auto;
-   max-height: 0;
-   overflow: hidden;
-}
-
-.accordion .accordion-panel.active .accordion-content {
-   opacity: 1;
-   height: auto;
-   max-height: 500px;
 }

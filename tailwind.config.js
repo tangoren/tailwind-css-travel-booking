@@ -14,6 +14,7 @@ module.exports = {
       extend: {
          fontFamily: {
             sans: ["Inter", "sans-serif"],
+            material: ["Material Icons"],
          },
       },
    },
