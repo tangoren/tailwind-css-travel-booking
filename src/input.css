@@ -142,3 +142,16 @@
 
    /* tour */
 }
+
+.accordion .accordion-panel .accordion-content {
+   opacity: 0;
+   height: auto;
+   max-height: 0;
+   overflow: hidden;
+}
+
+.accordion .accordion-panel.active .accordion-content {
+   opacity: 1;
+   height: auto;
+   max-height: 500px;
+}
