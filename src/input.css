@@ -137,7 +137,15 @@
    }
 
    .tour-itinerary .accordion-panel {
-      @apply relative pl-12 before:content-['\f1e3'] first:before:content-['\e55f'] last:before:content-['\e153'] before:font-material before:absolute before:z-10 before:-top-[2px] before:left-0 before:w-8 before:h-8 before:leading-[2rem] before:bg-slate-200 before:rounded-full before:text-lg before:text-gray-400 first:before:bg-green-500 first:before:text-white last:before:bg-red-500 last:before:text-white before:text-center after:bg-gray-200 after:w-px after:h-full after:absolute after:top-0 after:left-[16px] last:after:hidden;
+      @apply relative pl-12 before:content-['\f1e3'] first:before:content-['\e55f'] last:before:content-['\e153'] before:font-material before:absolute before:z-10 before:-top-[2px] before:left-0 before:w-8 before:h-8 before:leading-[2rem] before:bg-slate-200 before:rounded-full before:text-lg before:text-gray-400 first:before:bg-sky-500 first:before:text-white last:before:bg-red-500 last:before:text-white before:text-center after:bg-gray-200 after:w-px after:h-full after:absolute after:top-0 after:left-[16px] last:after:hidden;
+   }
+
+   .tour-itinerary .accordion-introduction {
+      @apply first:before:content-['\e88e'];
+   }
+
+   .tour-itinerary .accordion-start {
+      @apply before:content-['\e55f'] before:bg-green-500 before:text-white;
    }
 
    .tour-itinerary .accordion-panel.active {
