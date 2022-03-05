@@ -153,11 +153,11 @@
    }
 
    .tour-itinerary .accordion-trigger {
-      @apply cursor-pointer pb-8 text-lg font-semibold text-slate-600;
+      @apply cursor-pointer pb-8 text-lg font-semibold text-slate-600 before:transition-all before:content-['\e5cf'] before:font-material before:absolute before:top-0 before:right-0 before:text-slate-400 before:opacity-0 hover:before:opacity-100;
    }
 
    .tour-itinerary .accordion-panel.active .accordion-trigger {
-      @apply p-0;
+      @apply p-0 before:opacity-100;
    }
 
    .tour-itinerary .accordion-trigger span {
