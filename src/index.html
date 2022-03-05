@@ -12,6 +12,10 @@
          href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
          rel="stylesheet"
       />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@8.0.7/swiper-bundle.min.css"
+      />
       <link href="/dist/style.css" rel="stylesheet" />
    </head>
    <body>
@@ -80,7 +84,6 @@
             </div>
          </div>
          <div class="tour-image">
-            <!-- TODO: Simple gallery -->
             <img
                src="https://cdn.tourradar.com/s3/tour/1500x800/20849_5dfb59df282fd.jpg"
                class="rounded-md"
@@ -104,6 +107,90 @@
                   </div>
                </div>
                <!-- block -->
+               <div class="tour-content-block">
+                  <div class="tour-content-title">Places You’ll See</div>
+                  <div class="tour-places">
+                     <div class="swiper">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <div class="swiper-image">
+                                 <img
+                                    src="https://cdn.tourradar.com/s3/cities/520x406/6901_e63237.jpg"
+                                    alt="image"
+                                 />
+                              </div>
+                              <div class="swiper-title">Istanbul</div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="swiper-image">
+                                 <img
+                                    src="https://cdn.tourradar.com/s3/cities/520x406/11327_781346.jpg"
+                                    alt="image"
+                                 />
+                              </div>
+                              <div class="swiper-title">Gallipoli</div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="swiper-image">
+                                 <img
+                                    src="https://cdn.tourradar.com/s3/cities/520x406/6910_6a5f12.jpg"
+                                    alt="image"
+                                 />
+                              </div>
+                              <div class="swiper-title">Troy</div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="swiper-image">
+                                 <img
+                                    src="https://cdn.tourradar.com/s3/cities/520x406/6917_790a64.jpg"
+                                    alt="image"
+                                 />
+                              </div>
+                              <div class="swiper-title">Kusadasi</div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="swiper-image">
+                                 <img
+                                    src="https://cdn.tourradar.com/s3/cities/520x406/6938_66c02f.jpg"
+                                    alt="image"
+                                 />
+                              </div>
+                              <div class="swiper-title">Fethiye</div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="swiper-image">
+                                 <img
+                                    src="https://cdn.tourradar.com/s3/cities/520x406/11285_462873.jpg"
+                                    alt="image"
+                                 />
+                              </div>
+                              <div class="swiper-title">Oludeniz</div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="swiper-image">
+                                 <img
+                                    src="https://cdn.tourradar.com/s3/cities/520x406/6936_7ad596.jpg"
+                                    alt="image"
+                                 />
+                              </div>
+                              <div class="swiper-title">Dalyan</div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="swiper-image">
+                                 <img
+                                    src="https://cdn.tourradar.com/s3/cities/520x406/11330_177f39.jpg"
+                                    alt="image"
+                                 />
+                              </div>
+                              <div class="swiper-title">Cappadocia</div>
+                           </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                     </div>
+                  </div>
+               </div>
+               <!-- block -->
             </div>
             <div class="tour-sidebar">
                <div class="tour-amount">$1,149<span>.00</span></div>
@@ -121,6 +208,7 @@
       </div>
       <!-- tour -->
 
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8.0.7/swiper-bundle.min.js"></script>
       <script src="/src/app.js"></script>
    </body>
 </html>

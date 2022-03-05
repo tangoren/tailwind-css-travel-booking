@@ -20,3 +20,12 @@ function handleMenu() {
       ? (toggleContent.textContent = "close")
       : (toggleContent.textContent = "menu");
 }
+
+var let = new Swiper(".tour-places .swiper", {
+   slidesPerView: 3,
+   spaceBetween: 30,
+   navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+   },
+});

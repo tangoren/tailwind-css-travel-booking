@@ -120,6 +120,22 @@
       @apply text-slate-500;
    }
 
+   .tour-places .swiper-image img {
+      @apply rounded-md;
+   }
+
+   .tour-places .swiper-title {
+      @apply mt-3 font-medium text-slate-600;
+   }
+
+   .tour-places [class*="swiper-button"] {
+      @apply w-10 h-10 bg-white after:text-base after:content-['next'] rounded-full text-slate-600 top-[45%];
+   }
+
+   .tour-places .swiper-button-prev {
+      @apply after:content-['prev'];
+   }
+
    .tour-sidebar {
       @apply w-1/3 lg:ml-8 bg-white border border-solid border-gray-200 rounded-lg p-10;
    }
