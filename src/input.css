@@ -109,7 +109,7 @@
    }
 
    .tour-content-block {
-      @apply mt-10 first:mt-0 pb-10 border-b border-solid border-gray-200 last:border-0;
+      @apply mt-10 first:mt-0 pb-10 border-b border-solid border-gray-200 last:border-0 last:p-0;
    }
 
    .tour-content-title {
@@ -153,15 +153,15 @@
    }
 
    .tour-itinerary .accordion-trigger {
-      @apply cursor-pointer pb-8 text-lg font-semibold text-slate-600 before:transition-all before:content-['\e5cf'] before:font-material before:absolute before:top-0 before:right-0 before:text-slate-400 before:opacity-0 hover:before:opacity-100;
+      @apply cursor-pointer pb-8 text-lg font-semibold text-slate-600 before:transition-all before:content-['\e145'] before:font-material before:absolute before:top-0 before:right-0 before:text-slate-400 before:opacity-0 hover:before:opacity-100;
    }
 
    .tour-itinerary .accordion-panel.active .accordion-trigger {
-      @apply p-0 before:opacity-100;
+      @apply p-0 before:opacity-100 before:content-['\e15b'];
    }
 
    .tour-itinerary .accordion-trigger span {
-      @apply text-slate-400 font-medium;
+      @apply text-slate-400 font-medium pointer-events-none;
    }
 
    .tour-itinerary .accordion-panel:last-child .accordion-trigger {
@@ -178,6 +178,46 @@
 
    .tour-itinerary .accordion-panel .accordion-content p {
       @apply leading-6 mb-5 last:mb-0;
+   }
+
+   .tour-reviews {
+      @apply flex;
+   }
+
+   .tour-reviews-overall {
+      @apply w-2/5 relative flex justify-center items-center text-center bg-slate-200 p-10 bg-gradient-to-r from-sky-500 to-indigo-500 text-white rounded-md before:content-['\e743'] before:font-material before:absolute before:bottom-0 before:right-0 before:text-[250px] before:opacity-10 before:w-full before:h-full before:flex before:justify-center before:items-center before:text-center;
+   }
+
+   .tour-reviews-overall-rating {
+      @apply text-5xl font-semibold mt-5;
+   }
+
+   .tour-reviews-overall-title {
+      @apply text-2xl font-semibold opacity-60;
+   }
+
+   .tour-reviews-overall-text {
+      @apply text-4xl font-semibold mt-4;
+   }
+
+   .tour-reviews-feedback {
+      @apply w-3/5 lg:ml-8 border border-solid border-gray-200 rounded-lg;
+   }
+
+   .tour-reviews-feedback-item {
+      @apply flex justify-between items-center border-b border-solid border-gray-200 last:border-0 py-4 px-8 text-slate-600;
+   }
+
+   .tour-reviews-feedback-title {
+      @apply font-semibold;
+   }
+
+   .tour-reviews-feedback-text {
+      @apply text-sm mt-1 text-gray-400;
+   }
+
+   .tour-reviews-feedback-rating {
+      @apply font-semibold w-10 h-10 leading-[2.5rem] rounded-full bg-slate-200 text-gray-500 text-center;
    }
 
    .tour-sidebar {
