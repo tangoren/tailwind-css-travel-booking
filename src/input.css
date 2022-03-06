@@ -185,11 +185,11 @@
    }
 
    .tour-reviews-overall {
-      @apply w-2/5 relative flex justify-center items-center text-center bg-slate-200 p-10 bg-gradient-to-r from-sky-500 to-indigo-500 text-white rounded-md before:content-['\e743'] before:font-material before:absolute before:bottom-0 before:right-0 before:text-[250px] before:opacity-10 before:w-full before:h-full before:flex before:justify-center before:items-center before:text-center;
+      @apply w-2/5 relative flex justify-center items-center text-center bg-slate-200 p-10 bg-gradient-to-r from-sky-500 to-indigo-500 text-white rounded-md before:content-['\e743'] before:font-material before:absolute before:bottom-0 before:right-0 before:text-[250px] before:opacity-[0.075] before:w-full before:h-full before:flex before:justify-center before:items-center before:text-center before:pointer-events-none after:content-['\e743'] after:font-material after:absolute after:bottom-0 after:right-0 after:text-[250px] after:opacity-[0.075] after:w-full after:h-full after:flex after:justify-center after:items-center after:text-center after:pointer-events-none after:animate-ping;
    }
 
    .tour-reviews-overall-rating {
-      @apply text-5xl font-semibold mt-5;
+      @apply text-6xl font-semibold mt-6;
    }
 
    .tour-reviews-overall-title {
@@ -197,15 +197,23 @@
    }
 
    .tour-reviews-overall-text {
-      @apply text-4xl font-semibold mt-4;
+      @apply text-4xl font-semibold mt-5;
    }
 
    .tour-reviews-feedback {
-      @apply w-3/5 lg:ml-8 border border-solid border-gray-200 rounded-lg;
+      @apply w-3/5 lg:mr-8 bg-white border border-solid border-gray-200 rounded-lg;
    }
 
    .tour-reviews-feedback-item {
-      @apply flex justify-between items-center border-b border-solid border-gray-200 last:border-0 py-4 px-8 text-slate-600;
+      @apply flex justify-between items-center border-b border-solid border-gray-200 last:border-0 py-4 px-6 text-slate-600;
+   }
+
+   .tour-reviews-feedback-content {
+      @apply flex items-center;
+   }
+
+   .tour-reviews-feedback-icon span {
+      @apply mr-4 relative top-0.5 text-3xl text-sky-500;
    }
 
    .tour-reviews-feedback-title {
@@ -213,11 +221,11 @@
    }
 
    .tour-reviews-feedback-text {
-      @apply text-sm mt-1 text-gray-400;
+      @apply text-sm text-gray-400;
    }
 
    .tour-reviews-feedback-rating {
-      @apply font-semibold w-10 h-10 leading-[2.5rem] rounded-full bg-slate-200 text-gray-500 text-center;
+      @apply font-semibold w-12 h-12 leading-[3rem] rounded-full bg-slate-200 text-gray-500 text-center;
    }
 
    .tour-sidebar {
