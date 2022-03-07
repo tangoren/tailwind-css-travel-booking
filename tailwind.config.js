@@ -20,6 +20,19 @@ module.exports = {
             "tour-image":
                "url('https://cdn.tourradar.com/s3/tour/1500x800/20849_5dfb59df282fd.jpg')",
          },
+         keyframes: {
+            zoom: {
+               "0%": {
+                  transform: "scale(1) rotate(0deg)",
+               },
+               "100%": {
+                  transform: "scale(1.1) rotate(-2deg)",
+               },
+            },
+         },
+         animation: {
+            zoom: "zoom 4s infinite alternate",
+         },
       },
    },
    plugins: [],

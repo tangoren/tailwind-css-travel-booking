@@ -6,7 +6,7 @@
 
 @layer components {
    body {
-      @apply bg-slate-50;
+      @apply bg-slate-50 selection:bg-orange-500 selection:text-white;
    }
 
    .container {
@@ -79,8 +79,12 @@
       @apply text-yellow-400 text-sm h-[17px] leading-[17px] relative top-[1px];
    }
 
+   .tour-hero {
+      @apply mb-12 overflow-hidden rounded-lg;
+   }
+
    .tour-image {
-      @apply mb-12;
+      @apply bg-tour-image bg-cover bg-center aspect-video animate-zoom relative before:content-[''] before:absolute before:top-0 before:left-0 before:opacity-50 before:bg-gradient-to-r before:from-red-600 before:to-orange-400 before:rounded-lg before:w-full before:h-full;
    }
 
    .tour-wrapper {
@@ -144,7 +148,12 @@
    }
 
    .tour-itinerary .accordion-trigger span {
-      @apply text-slate-400 font-medium pointer-events-none;
+      @apply text-slate-400 font-medium pointer-events-none transition-all;
+   }
+
+   .tour-itinerary .accordion-panel.active .accordion-trigger span,
+   .tour-itinerary .accordion-panel:hover .accordion-trigger span {
+      @apply text-slate-600;
    }
 
    .tour-itinerary .accordion-panel:last-child .accordion-trigger {
@@ -341,11 +350,15 @@
    }
 
    .footer {
-      @apply mt-24 text-sm text-white text-opacity-70 bg-gray-800 text-center;
+      @apply mt-24 text-sm text-white text-opacity-70 bg-gray-800;
    }
 
    .footer-inner {
-      @apply py-5;
+      @apply py-5 flex justify-between;
+   }
+
+   .footer-menu-item {
+      @apply lg:ml-4 lg:hover:text-white transition-all;
    }
 
    /* tour */
