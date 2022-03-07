@@ -88,11 +88,15 @@
    }
 
    .tour-wrapper {
-      @apply flex items-start;
+      @apply flex flex-wrap lg:flex-nowrap items-start;
    }
 
    .tour-content {
-      @apply w-2/3;
+      @apply w-full lg:w-7/12 2xl:w-2/3;
+   }
+
+   .tour-sidebar {
+      @apply w-full lg:w-5/12 2xl:w-1/3 lg:ml-8 sticky top-8;
    }
 
    .tour-content-block {
@@ -218,10 +222,6 @@
 
    .tour-reviews-feedback-rating {
       @apply font-semibold w-12 h-12 leading-[3rem] rounded-full bg-slate-200 text-gray-500 text-center;
-   }
-
-   .tour-sidebar {
-      @apply w-1/3 lg:ml-8 sticky top-8;
    }
 
    .tour-receipt {
