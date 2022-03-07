@@ -6,7 +6,6 @@
 
 @layer components {
    body {
-      min-height: 7500px;
       @apply bg-slate-50;
    }
 
@@ -330,7 +329,7 @@
    }
 
    .tour-help-call {
-      @apply flex items-center bg-white rounded-md px-5 py-4 text-slate-600 font-medium cursor-pointer;
+      @apply flex items-center bg-white rounded-md px-5 py-4 text-slate-600 font-medium tracking-wide cursor-pointer;
    }
 
    .tour-help-call [class*="material"] {
@@ -339,6 +338,14 @@
 
    .tour-help-call:hover [class*="material"] {
       @apply text-orange-500;
+   }
+
+   .footer {
+      @apply mt-24 text-sm text-white text-opacity-70 bg-gray-800 text-center;
+   }
+
+   .footer-inner {
+      @apply py-5;
    }
 
    /* tour */
