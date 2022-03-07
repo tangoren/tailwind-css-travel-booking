@@ -304,5 +304,42 @@
       @apply w-[calc(100%-64px)] bg-sky-500 hover:bg-sky-600 px-5 h-12 text-sm leading-5 rounded-full font-semibold text-white transition-all;
    }
 
+   .tour-help {
+      @apply bg-tour-image bg-cover bg-center rounded-lg;
+   }
+
+   .tour-help-inner {
+      @apply py-12 px-10 flex justify-between items-center relative before:content-[''] before:absolute before:top-0 before:left-0 before:opacity-90 before:bg-gradient-to-r before:from-red-600 before:to-orange-400 before:rounded-lg before:w-full before:h-full;
+   }
+
+   .tour-help-content,
+   .tour-help-call {
+      @apply relative text-white;
+   }
+
+   .tour-help-content {
+      @apply w-[calc(100%-300px)];
+   }
+
+   .tour-help-title {
+      @apply text-3xl font-semibold;
+   }
+
+   .tour-help-text {
+      @apply mt-5 opacity-95;
+   }
+
+   .tour-help-call {
+      @apply flex items-center bg-white rounded-md px-5 py-4 text-slate-600 font-medium cursor-pointer;
+   }
+
+   .tour-help-call [class*="material"] {
+      @apply mr-2 text-orange-300 transition-all;
+   }
+
+   .tour-help-call:hover [class*="material"] {
+      @apply text-orange-500;
+   }
+
    /* tour */
 }

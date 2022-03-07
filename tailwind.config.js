@@ -16,6 +16,10 @@ module.exports = {
             sans: ["Inter", "sans-serif"],
             material: ["Material Icons Outlined"],
          },
+         backgroundImage: {
+            "tour-image":
+               "url('https://cdn.tourradar.com/s3/tour/1500x800/20849_5dfb59df282fd.jpg')",
+         },
       },
    },
    plugins: [],
