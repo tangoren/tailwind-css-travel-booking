@@ -92,7 +92,7 @@
    }
 
    .tour-image {
-      @apply bg-tour-image bg-cover bg-center aspect-square md:aspect-video animate-zoom relative before:content-[''] before:absolute before:top-0 before:left-0 before:opacity-50 before:bg-gradient-to-r before:from-red-600 before:to-orange-400 before:rounded-lg before:w-full before:h-full;
+      @apply bg-[url('/dist/images/tour-hero.jpeg')] bg-cover bg-center aspect-square md:aspect-video animate-zoom relative before:content-[''] before:absolute before:top-0 before:left-0 before:opacity-50 before:bg-gradient-to-r before:from-red-600 before:to-orange-400 before:rounded-lg before:w-full before:h-full;
    }
 
    .tour-wrapper {
@@ -321,7 +321,7 @@
    }
 
    .tour-help {
-      @apply bg-tour-image bg-cover bg-center rounded-lg;
+      @apply bg-[url('/dist/images/tour-hero.jpeg')] bg-cover bg-center rounded-lg;
    }
 
    .tour-help-inner {

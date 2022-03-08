@@ -19,9 +19,6 @@ module.exports = {
             sans: ["Inter", "sans-serif"],
             material: ["Material Icons Outlined"],
          },
-         backgroundImage: {
-            "tour-image": "url('/dist/images/tour-hero.jpeg')",
-         },
          keyframes: {
             zoom: {
                "0%": {
