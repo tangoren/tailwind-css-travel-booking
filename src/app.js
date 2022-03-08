@@ -1,9 +1,11 @@
 const body = document.querySelector("body");
 const toggleButton = document.querySelector(".menu-toggle");
+const menuOverlay = document.querySelector(".header-menu-overlay");
 let toggleContent = toggleButton.querySelector("span");
 
 window.addEventListener("resize", handeResize);
-toggleButton.addEventListener("click", handleMenu);
+toggleButton.addEventListener("click", handleMenuToggle);
+menuOverlay.addEventListener("click", handleMenuClose);
 
 // Mobile menu resize state
 function handeResize() {
@@ -14,9 +16,18 @@ function handeResize() {
    toggleContent.textContent = "menu";
 }
 
-// Mobile menu state
-function handleMenu() {
+// Mobile menu toggle
+function handleMenuToggle() {
    body.classList.toggle("menu-open");
+
+   body.classList.contains("menu-open")
+      ? (toggleContent.textContent = "close")
+      : (toggleContent.textContent = "menu");
+}
+
+// Mobile menu toggle
+function handleMenuClose() {
+   body.classList.remove("menu-open");
 
    body.classList.contains("menu-open")
       ? (toggleContent.textContent = "close")

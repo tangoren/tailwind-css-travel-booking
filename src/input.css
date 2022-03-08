@@ -34,7 +34,11 @@
    }
 
    .header-menu {
-      @apply lg:py-0 py-8 flex flex-col lg:flex-row lg:items-center lg:relative z-20 fixed top-0 left-0 lg:bg-transparent bg-white lg:drop-shadow-none drop-shadow-xl h-full transition-all lg:translate-x-0 -translate-x-[110%];
+      @apply lg:py-0 py-8 lg:pt-0 pt-5 flex flex-col lg:flex-row lg:items-center lg:relative z-20 fixed top-[56px] lg:top-0 left-0 lg:bg-transparent bg-white lg:drop-shadow-none drop-shadow-xl h-[calc(100%-56px)] lg:h-auto transition-all lg:translate-x-0 -translate-x-[110%];
+   }
+
+   .menu-open {
+      @apply overflow-hidden;
    }
 
    .menu-open .header-menu {
@@ -42,11 +46,19 @@
    }
 
    .header-menu-item {
-      @apply block py-3 lg:px-0 px-24 ml-0 lg:ml-6 text-sm text-center text-slate-500 hover:text-slate-900 transition-all;
+      @apply block py-3 w-60 lg:w-auto ml-0 lg:ml-6 text-sm text-center text-slate-500 hover:text-slate-900 transition-all;
    }
 
    .header-menu-copyright {
       @apply mt-auto text-center text-xs lg:hidden block text-slate-400;
+   }
+
+   .header-menu-overlay {
+      @apply bg-slate-800 opacity-0 fixed top-[56px] left-0 w-full h-[calc(100%-56px)] z-10 transition-all;
+   }
+
+   .menu-open .header-menu-overlay {
+      @apply opacity-50;
    }
 
    /* header */
