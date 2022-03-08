@@ -879,31 +879,6 @@ body::selection{
 .tour-image{
   position: relative;
   aspect-ratio: 1 / 1;
-}
-
-@-webkit-keyframes zoom{
-  0%{
-    transform: scale(1) rotate(0deg);
-  }
-
-  100%{
-    transform: scale(1.1) rotate(-2deg);
-  }
-}
-
-@keyframes zoom{
-  0%{
-    transform: scale(1) rotate(0deg);
-  }
-
-  100%{
-    transform: scale(1.1) rotate(-2deg);
-  }
-}
-
-.tour-image{
-  -webkit-animation: zoom 4s infinite alternate;
-          animation: zoom 4s infinite alternate;
   background-image: url('/dist/images/tour-hero.jpeg');
   background-size: cover;
   background-position: center;
