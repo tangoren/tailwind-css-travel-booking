@@ -1,5 +1,9 @@
 module.exports = {
-   content: ["./src/**/*.{html,js}"],
+   content: [
+      "./src/**/*.{html,js}",
+      "./dist/**/*.{html,js}",
+      "./**/*.{html,js}",
+   ],
    theme: {
       screens: {
          md: "768px",
@@ -16,8 +20,7 @@ module.exports = {
             material: ["Material Icons Outlined"],
          },
          backgroundImage: {
-            "tour-image":
-               "url('https://cdn.tourradar.com/s3/tour/1500x800/20849_5dfb59df282fd.jpg')",
+            "tour-image": "url('/dist/images/tour-hero.jpeg')",
          },
          keyframes: {
             zoom: {

@@ -45,7 +45,7 @@ pnpm-debug.log*
 ### Images ###
 # JPEG
 *.jpg
-*.jpeg
+# *.jpeg
 *.jpe
 *.jif
 *.jfif
