@@ -14,7 +14,7 @@
    }
 
    .header {
-      @apply h-20 bg-white border-b border-gray-200;
+      @apply h-14 lg:h-20 bg-white border-b border-gray-200;
    }
 
    .header .container {
@@ -22,11 +22,11 @@
    }
 
    .header-logo {
-      @apply flex items-center text-xl font-medium text-slate-500;
+      @apply flex items-center text-lg lg:text-xl font-medium text-slate-500;
    }
 
    .header-logo-icon {
-      @apply mr-2 text-sky-500 text-4xl;
+      @apply mr-2 text-sky-500 text-2xl lg:text-4xl;
    }
 
    .menu-toggle {
@@ -177,7 +177,7 @@
    }
 
    .tour-reviews-overall {
-      @apply w-full xl:w-2/5 relative flex justify-center items-center text-center p-10 text-slate-500 border border-t-0 border-solid border-slate-200 lg:border-t-[1px] before:content-['\e885'] before:font-material before:absolute before:bottom-0 before:right-0 before:text-[250px] before:opacity-[0.05] before:w-full before:h-full before:flex before:justify-center before:items-center before:text-center before:pointer-events-none after:content-['\e838'] after:font-material after:absolute after:bottom-0 after:right-0 after:text-[250px] after:opacity-[0.075] after:w-full after:h-full after:flex after:justify-center after:items-center after:text-center after:pointer-events-none after:animate-ping overflow-hidden rounded-b-lg lg:rounded-lg bg-white lg:bg-transparent;
+      @apply w-full xl:w-2/5 relative flex justify-center items-center text-center p-10 text-slate-500 border border-t-0 border-solid border-slate-200 xl:border-t-[1px] before:content-['\e885'] before:font-material before:absolute before:bottom-0 before:right-0 before:text-[250px] before:opacity-[0.05] before:w-full before:h-full before:flex before:justify-center before:items-center before:text-center before:pointer-events-none after:content-['\e838'] after:font-material after:absolute after:bottom-0 after:right-0 after:text-[250px] after:opacity-[0.075] after:w-full after:h-full after:flex after:justify-center after:items-center after:text-center after:pointer-events-none after:animate-ping overflow-hidden rounded-b-lg xl:rounded-lg bg-white xl:bg-transparent;
    }
 
    .tour-reviews-overall-rating {
@@ -193,7 +193,7 @@
    }
 
    .tour-reviews-feedback {
-      @apply w-full xl:w-3/5 xl:mr-8 bg-white border border-solid border-gray-200 rounded-t-lg lg:rounded-lg;
+      @apply w-full xl:w-3/5 xl:mr-8 bg-white border border-solid border-gray-200 rounded-t-lg xl:rounded-lg;
    }
 
    .tour-reviews-feedback-item {
@@ -334,7 +334,7 @@
    }
 
    .tour-help-call {
-      @apply flex items-center bg-white rounded-md px-5 py-4 mt-10 text-slate-600 font-medium tracking-wide 2xl:mt-0 cursor-pointer text-sm lg:text-base;
+      @apply flex items-center bg-white rounded-md px-4 py-3 lg:px-5 lg:py-4 mt-10 text-slate-600 font-medium tracking-wide 2xl:mt-0 cursor-pointer text-sm lg:text-base;
    }
 
    .tour-help-call [class*="material"] {
