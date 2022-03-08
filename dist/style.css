@@ -540,6 +540,13 @@ body::selection{
   }
 }
 
+[class*="material"]{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .container{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -570,6 +577,10 @@ body::selection{
 
 .header-logo{
   display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   align-items: center;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -587,6 +598,10 @@ body::selection{
 
 .header-logo-icon{
   margin-right: 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-size: 1.5rem;
   line-height: 2rem;
   --tw-text-opacity: 1;
@@ -1008,6 +1023,13 @@ body::selection{
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+
+.tour-places .swiper{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .tour-places .swiper-image img{

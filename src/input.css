@@ -9,6 +9,10 @@
       @apply bg-slate-50 pb-[65px] lg:pb-0 selection:bg-orange-500 selection:text-white;
    }
 
+   [class*="material"] {
+      @apply select-none;
+   }
+
    .container {
       @apply px-5;
    }
@@ -22,11 +26,11 @@
    }
 
    .header-logo {
-      @apply flex items-center text-lg lg:text-xl font-medium text-slate-500;
+      @apply flex items-center text-lg lg:text-xl font-medium text-slate-500 select-none;
    }
 
    .header-logo-icon {
-      @apply mr-2 text-sky-500 text-2xl lg:text-4xl;
+      @apply mr-2 text-sky-500 text-2xl lg:text-4xl select-none;
    }
 
    .menu-toggle {
@@ -117,6 +121,10 @@
 
    .tour-description {
       @apply text-slate-500 text-sm lg:text-base;
+   }
+
+   .tour-places .swiper {
+      @apply select-none;
    }
 
    .tour-places .swiper-image img {
