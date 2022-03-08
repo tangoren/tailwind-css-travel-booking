@@ -1,7 +1,9 @@
 const body = document.querySelector("body");
 const toggleButton = document.querySelector(".menu-toggle");
 const menuOverlay = document.querySelector(".header-menu-overlay");
+const reserveButton = document.querySelector(".tour-reserve");
 let toggleContent = toggleButton.querySelector("span");
+let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
 window.addEventListener("resize", handeResize);
 toggleButton.addEventListener("click", handleMenuToggle);
@@ -33,6 +35,20 @@ function handleMenuClose() {
       ? (toggleContent.textContent = "close")
       : (toggleContent.textContent = "menu");
 }
+
+// Mobile scroll to content
+function scrollTo(element) {
+   window.scroll({
+      behavior: "smooth",
+      left: 0,
+      top: element.offsetTop,
+   });
+}
+
+viewportWidth < 992 &&
+   reserveButton.addEventListener("click", () => {
+      scrollTo(document.querySelector(".tour-sidebar"));
+   });
 
 // Places carousel
 var let = new Swiper(".tour-places .swiper", {
