@@ -233,7 +233,7 @@
    }
 
    .tour-receipt {
-      @apply bg-white border border-solid border-gray-200 rounded-lg p-8 2xl:p-10 mt-10 lg:mt-0;
+      @apply bg-white border border-solid border-gray-200 rounded-lg p-8 2xl:p-10 mt-0;
    }
 
    .tour-receipt-head {
@@ -358,7 +358,7 @@
    }
 
    .footer {
-      @apply mt-12 lg:mt-24 text-center lg:text-left text-sm text-white text-opacity-60 bg-gray-800;
+      @apply mt-16 lg:mt-24 text-center lg:text-left text-sm text-white text-opacity-60 bg-gray-800;
    }
 
    .footer-inner {
