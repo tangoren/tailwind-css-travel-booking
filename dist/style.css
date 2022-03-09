@@ -1861,8 +1861,10 @@ span.tour-amount-old{
 }
 
 .tour-reserve{
+  pointer-events: auto;
   height: 2.5rem;
   width: calc(100% - 56px);
+  cursor: pointer;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
@@ -1884,6 +1886,10 @@ span.tour-amount-old{
 }
 
 @media (min-width: 992px){
+  .tour-reserve{
+    pointer-events: none;
+  }
+
   .tour-reserve{
     height: 3rem;
   }

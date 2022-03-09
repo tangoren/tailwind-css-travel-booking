@@ -325,7 +325,7 @@
    }
 
    .tour-reserve {
-      @apply w-[calc(100%-56px)] lg:w-[calc(100%-64px)] bg-sky-500 hover:bg-sky-600 px-5 h-10 lg:h-12 text-sm leading-5 rounded-full font-semibold text-white transition-all;
+      @apply w-[calc(100%-56px)] lg:w-[calc(100%-64px)] bg-sky-500 hover:bg-sky-600 px-5 h-10 lg:h-12 text-sm leading-5 rounded-full font-semibold text-white transition-all pointer-events-auto lg:pointer-events-none cursor-pointer;
    }
 
    .tour-help {

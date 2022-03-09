@@ -45,10 +45,9 @@ function scrollTo(element) {
    });
 }
 
-viewportWidth < 992 &&
-   reserveButton.addEventListener("click", () => {
-      scrollTo(document.querySelector(".tour-sidebar"));
-   });
+reserveButton.addEventListener("click", () => {
+   scrollTo(document.querySelector(".tour-sidebar"));
+});
 
 // Places carousel
 var let = new Swiper(".tour-places .swiper", {
